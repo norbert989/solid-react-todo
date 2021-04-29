@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 
 import { getSolidDataset, getThing, getUrl } from "@inrupt/solid-client";
 
@@ -46,12 +46,12 @@ function App() {
   }, [isLoggedIn, podRoot]);
 
   return (
-    <div className="app">
+    <div className="container mx-auto px-2">
       <Login isLoggedIn={isLoggedIn} />
       <h1>{webId}</h1>
       <h2>{podRoot}</h2>
       { isLoggedIn &&
-        <div className="todoapp">
+        <div>
           <Header
             newTodo={newTodo}
             handleNewTodo={handleNewTodo}

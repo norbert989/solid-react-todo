@@ -4,14 +4,14 @@ import SolidEmblem from "../images/solid-emblem.svg";
 
 function Login({ isLoggedIn }) {
   return (
-    <section id="login" className="panel">
+    <section id="login">
       <button
         name="btnLogin"
-        className="btnLogin"
+        className="btn"
         id="btnLogin"
         onClick={() => loginToInruptDotCom()}
       >
-        <span>
+        <span className="pr-1">
           <img
             width="33.2"
             height="30.2"
